@@ -587,7 +587,21 @@ require('mason-lspconfig').setup()
 --  define the property 'filetypes' to the map in question.
 local servers = {
   -- clangd = {},
-  -- gopls = {},
+  gopls = {
+    staticcheck = true,
+    filetypes = {'go', 'gomod', 'gowork', 'gotmpl'},
+    gopls = {
+      gofumpt = true,
+      completeUnimported = true,
+      usePlaceholders = true,
+      staticcheck = true,
+      directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
+      semanticTokens = true,
+      analyses = {
+        unusedparams = true
+      },
+    }
+  },
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
