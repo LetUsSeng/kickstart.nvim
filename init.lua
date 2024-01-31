@@ -201,16 +201,16 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    -- Theme Catppuccin
+    'catppuccin/nvim',
     priority = 1000,
     lazy = false,
     config = function()
-      require('onedark').setup {
+      require('catppuccin').setup {
         -- Set a style preset. 'dark' is default.
         style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
       }
-      require('onedark').load()
+      require('captppuccin').load()
     end,
   },
 
