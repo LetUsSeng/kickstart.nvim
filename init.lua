@@ -210,7 +210,7 @@ require('lazy').setup({
         -- Set a style preset. 'dark' is default.
         style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
       }
-      require('captppuccin').load()
+      require('catppuccin').load()
     end,
   },
 
