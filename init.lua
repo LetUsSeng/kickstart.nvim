@@ -209,6 +209,8 @@ require('lazy').setup({
       require('catppuccin').setup {
         -- Set a style preset. 'dark' is default.
         style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
+        flavor = 'mocha',
+        transparent_background = true,
       }
       require('catppuccin').load()
     end,
